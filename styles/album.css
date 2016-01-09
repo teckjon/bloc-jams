@@ -33,6 +33,7 @@
      font-weight: 300;
      font-size: 0.75rem;
  }
+ 
  .album-view-song-list {
      width: 90%;
      margin: 1.5rem auto;
@@ -43,7 +44,7 @@
  .album-view-song-item {
      height: 3rem;
      /* #1 */
-     border-bottom: 1px solid rgba(255,255,255,0.5);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
  }
  
  .song-item-number {
@@ -57,17 +58,18 @@
  .song-item-duration {
      width: 5%;
  }
+ 
  @media (max-width: 40rem) and (min-width: 20rem) {
      .album-view-details {
          text-align: center
      }
-     
      .album-view-title {
-         margin-top: 0;   
+         margin-top: 0;
      }
  }
-  @media (max-width: 64rem) and (min-width: 20rem) {
-    .album-view-song-list {
+ 
+ @media (max-width: 64rem) and (min-width: 20rem) {
+     .album-view-song-list {
          position: relative;
          top: 1rem;
          width: 80%;

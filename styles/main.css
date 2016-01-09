@@ -1,5 +1,6 @@
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -19,16 +20,17 @@ body {
 .navbar {
     position: relative;
     padding: 0.5rem;
-    background-color: rgba(101,18,95,0.5);
+    background-color: rgba(101, 18, 95, 0.5);
     z-index: 1;
 }
 
 .navbar > .logo {
     position: relative;
     left: 2rem;
-    cursor: pointer;  /* produces the finger-pointer icon when you hover over the logo */
- }
- 
+    cursor: pointer;
+    /* produces the finger-pointer icon when you hover over the logo */
+}
+
 .navbar .links-container {
     display: table;
     position: absolute;
@@ -38,8 +40,8 @@ body {
     color: white;
     /* #3 */
     text-decoration: none;
- }
- 
+}
+
 .links-container .navbar-link {
     display: table-cell;
     position: relative;
@@ -56,58 +58,77 @@ body {
     /* #3 */
     text-decoration: none;
     cursor: pointer;
- }
- 
-   /* #5 */
- .links-container .navbar-link:hover {
-     color: rgb(233,50,117);
- }
+}
+
+
+/* #5 */
+
+.links-container .navbar-link:hover {
+    color: rgb(233, 50, 117);
+}
 
 .links-container .navbar-link:active {
     background-color: white;
 }
- .container {
-     margin: 0 auto;
-     max-width: 64rem;
- }
 
- .container.narrow {
-     max-width: 56rem;
- }
- 
- 
- /* Medium and small screens (640px) */
- @media (min-width: 40rem) {
-     html { font-size: 112%; }     
-   /* Style information will go here */
- }
- 
- /* Large screens (1024px) */
- @media (min-width: 64rem) {
-     html { font-size: 120%; }     
-   /* Style information will go here */
- 
-     .column {
-         float: left;
-         padding-left: 1rem;
-         padding-right: 1rem;
-     }    
- 
-     .column.full { width: 100%; }
-     .column.two-thirds { width: 66.7%; }
-     .column.half { width: 50%; }
-     .column.third { width: 33.3%; }
-     .column.fourth { width: 25%; }
-     .column.flow-opposite { float: right; }       
- }
+.container {
+    margin: 0 auto;
+    max-width: 64rem;
+}
+
+.container.narrow {
+    max-width: 56rem;
+}
+
+
+/* Medium and small screens (640px) */
+
+@media (min-width: 40rem) {
+    html {
+        font-size: 112%;
+    }
+    /* Style information will go here */
+}
+
+
+/* Large screens (1024px) */
+
+@media (min-width: 64rem) {
+    html {
+        font-size: 120%;
+    }
+    /* Style information will go here */
+    .column {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .column.full {
+        width: 100%;
+    }
+    .column.two-thirds {
+        width: 66.7%;
+    }
+    .column.half {
+        width: 50%;
+    }
+    .column.third {
+        width: 33.3%;
+    }
+    .column.fourth {
+        width: 25%;
+    }
+    .column.flow-opposite {
+        float: right;
+    }
+}
 
 .clearfix:before,
 .clearfix:after {
-   content: " ";
-   display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
-   clear: both;
+    clear: both;
 }
-
