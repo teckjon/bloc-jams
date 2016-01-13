@@ -67,10 +67,17 @@
      var currentParent = element.parent.Element;
      
      if (currentParent) {
-         while (currentParent.className != targetclass) {
+         while (currentParent.className != targetClass) {
              currentParent = currentParent.parentElement;
-     }
+     } 
+     if (currentParent.className == targetClass) {    
      return currentParent;
+     } else {
+         alert ("No Parent found");
+     } else {
+         alert ("No Parent found");
+     }
+      
      //loop thru parent objects - if we find named element return true - else false
  };
 
