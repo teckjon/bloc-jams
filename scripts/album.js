@@ -45,7 +45,7 @@ var albumPicasso = {
          
         if (currentlyPlayingSong !== null) {
             var currentlyPlayingCell = $('.song-item-number[data-song-number="' + currentlyPlayingSong + '"]');
-            currentlyPlayingCel.html(currentlyPlayingCell);
+            currentlyPlayingCell.html(currentlyPlayingCell);
         }
         if (currentlyPlayingSong !== songNumber) {
             $(this).html(pauseButtonTemplate);
